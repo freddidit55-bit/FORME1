@@ -3,41 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FORME: Calisthenics &amp; Gym</title>
-<meta name="description" content="FORME builds every session around the skill you want, your equipment and your time.">
+<title>FORME: skill-based calisthenics and gym training</title>
+<meta name="description" content="Pick a skill like a pull-up, handstand or planche. FORME builds every session around it, your kit and your time, and moves you up when you've earned it.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="./app/favicon.png">
 <style>
-:root { color-scheme: dark; --bg: #0b0d12; --card: #161a21; --text: #e6e8ec; --muted: #a3a8b3; --accent: #f5b301; }
+@font-face { font-family: "Barlow"; font-weight: 400; font-display: swap; src: url("./fonts/barlow-400.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 600; font-display: swap; src: url("./fonts/barlow-600.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-display: swap; src: url("./fonts/barlow-condensed-700.woff2") format("woff2"); }
+
+:root { color-scheme: dark; --bg: #0b0d12; --card: #13161c; --line: #262b34; --text: #e6e8ec; --muted: #a3a8b3; --accent: #fbbf24; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.brand { display: inline-flex; align-items: center; gap: 8px; }
+.brand span { font-family: "Barlow Condensed", "Barlow", sans-serif; font-weight: 700; letter-spacing: 0.06em; font-size: 20px; color: var(--text); }
 main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
 a { color: var(--accent); }
-.brand { font-weight: 800; letter-spacing: 0.04em; color: var(--accent); text-decoration: none; font-size: 15px; }
-h1 { font-size: 28px; line-height: 1.2; margin: 24px 0 4px; }
+a.brand { text-decoration: none; }
+h1 { font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 34px; line-height: 1.05; margin: 28px 0 6px; }
 .updated { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
 h2 { font-size: 17px; margin: 28px 0 6px; }
 p { margin: 0; color: var(--muted); }
 .links { display: grid; gap: 10px; margin-top: 24px; }
-.links a { display: block; background: var(--card); border-radius: 10px; padding: 14px 16px; color: var(--text); text-decoration: none; }
 footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #262b34; color: var(--muted); font-size: 13px; }
 footer a { color: var(--muted); }
+
+main.home { max-width: 1040px; padding-top: 28px; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+.top a.small { color: var(--muted); font-size: 14px; text-decoration: none; border: 1px solid var(--line); padding: 6px 12px; }
+.top a.small:hover { color: var(--text); border-color: #3a404b; }
+.hero { padding: 56px 0 28px; max-width: 640px; }
+.hero h1 { font-size: clamp(44px, 9vw, 76px); line-height: 0.95; margin: 0; letter-spacing: -0.01em; }
+.hero p.lead { font-size: 18px; margin: 18px 0 0; color: var(--muted); max-width: 520px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 22px; font-weight: 600; text-decoration: none; font-size: 16px; transition: transform .15s ease, background-color .15s ease; }
+.btn:active { transform: scale(0.97); }
+.btn.primary { background: var(--accent); color: #0b0d12; }
+.btn.primary:hover { background: #fcd34d; }
+.btn.ghost { border: 1px solid var(--line); color: var(--muted); cursor: default; }
+.price { margin-top: 14px; font-size: 14px; color: var(--muted); }
+.strip { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; padding: 8px 16px 18px; margin: 18px -16px 0; scrollbar-width: none; }
+.strip::-webkit-scrollbar { display: none; }
+.strip figure { margin: 0; flex: 0 0 auto; width: min(62vw, 250px); scroll-snap-align: start; }
+.strip img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--card); }
+.strip figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
+.hint { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.hint i { display: inline-block; width: 18px; height: 1px; background: var(--muted); }
+h2.section { font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 30px; line-height: 1.05; margin: 64px 0 18px; color: var(--text); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.features div { padding: 20px 20px 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.features h3 { margin: 0 0 6px; font-size: 16px; display: flex; align-items: center; gap: 10px; }
+.features h3::before { content: ""; width: 8px; height: 8px; background: var(--accent); flex: none; }
+.features p { font-size: 15px; }
+.plan { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.plan div { border: 1px solid var(--line); padding: 18px 20px; }
+.plan b { display: block; font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 28px; color: var(--text); }
+.plan span { color: var(--muted); font-size: 14px; }
+.small-print { margin-top: 14px; font-size: 14px; }
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.hero > * { animation: rise .6s cubic-bezier(.2,.8,.2,1) both; }
+.hero > *:nth-child(2) { animation-delay: .08s; } .hero > *:nth-child(3) { animation-delay: .16s; } .hero > *:nth-child(4) { animation-delay: .24s; }
+@media (prefers-reduced-motion: reduce) { .hero > * { animation: none; } .reveal { opacity: 1; transform: none; transition: none; } }
+@media (min-width: 760px) { .strip { margin: 18px 0 0; padding: 8px 0 18px; scroll-padding-inline: 0; } }
 </style>
 </head>
 <body>
-<main>
-<a class="brand" href="./">FORME</a>
-<h1>FORME</h1>
-<p>Skill progressions that adapt. Pick a goal like your first pull-up or a handstand, and FORME plans every session around it, your equipment and your time.</p>
-<div class="links">
-<a href="./app/">Open FORME in your browser</a>
-<a href="./support/">Help and support</a>
-<a href="./privacy/">Privacy Policy</a>
-<a href="./terms/">Terms of Use</a>
+<main class="home">
+<div class="top">
+<span class="brand"><svg viewBox="0 0 100 100" width="26" height="26" aria-hidden="true"><g transform="translate(8 0) skewX(-10)" fill="#FBBF24"><path d="M24 12H86L80 28H42V42H66L61 57H42V88H24Z"/></g></svg><span>FORME</span></span>
+<a class="small" href="./app/">Open FORME</a>
 </div>
+<section class="hero">
+<h1>Train for the skill you want.</h1>
+<p class="lead">Pick a goal like a pull-up, handstand or planche. FORME builds every session around it, your kit and your time, and moves you up a stage when you've earned it.</p>
+<div class="cta">
+<a class="btn primary" href="./app/">Open FORME in your browser</a>
+<span class="btn ghost">Coming soon to the App Store</span>
+</div>
+<p class="price">14 days free, then £5.99 a month or £49.99 a year.</p>
+</section>
+<p class="hint reveal"><i></i>Swipe or scroll sideways to look around</p>
+<div class="strip reveal" aria-label="Screenshots">
+<figure><img src="./shots/1.jpg" width="440" height="956" loading="eager" alt="The welcome: pick a skill and see how FORME gets you there"><figcaption>The welcome: pick a skill and see how FORME gets you there</figcaption></figure>
+<figure><img src="./shots/2.jpg" width="440" height="956" loading="eager" alt="Home: today's workout and the weekly boss"><figcaption>Home: today's workout and the weekly boss</figcaption></figure>
+<figure><img src="./shots/3.jpg" width="440" height="956" loading="lazy" alt="A hold timer counting down mid-set"><figcaption>A hold timer counting down mid-set</figcaption></figure>
+<figure><img src="./shots/4.jpg" width="440" height="956" loading="lazy" alt="Goals: every stage from first rep to the skill"><figcaption>Goals: every stage from first rep to the skill</figcaption></figure>
+<figure><img src="./shots/5.jpg" width="440" height="956" loading="lazy" alt="Progress: streaks, records and your goal"><figcaption>Progress: streaks, records and your goal</figcaption></figure>
+<figure><img src="./shots/6.jpg" width="440" height="956" loading="lazy" alt="The weekly boss and its challenges"><figcaption>The weekly boss and its challenges</figcaption></figure>
+<figure><img src="./shots/7.jpg" width="440" height="956" loading="lazy" alt="Food: simple meals found in your own words"><figcaption>Food: simple meals found in your own words</figcaption></figure>
+</div>
+<h2 class="section reveal">What's inside</h2>
+<div class="features reveal">
+<div><h3>Skill paths</h3><p>Pick a goal like a pull-up, handstand or planche. FORME breaks it into stages and moves you up when your logged sets say you're ready.</p></div>
+<div><h3>Workouts that fit</h3><p>Every session is built around your goal, the kit you have, your time and how you feel that day.</p></div>
+<div><h3>Timers you can read mid-hold</h3><p>Five seconds to get into position, then a big clear countdown, with sound and vibration.</p></div>
+<div><h3>A weekly boss</h3><p>Each workout lands a hit. Beat this week's challenges before it gets away.</p></div>
+<div><h3>Progress that means something</h3><p>Streaks, personal records and how close you are to your goal, without the clutter.</p></div>
+<div><h3>Food without counting</h3><p>Hundreds of simple meals. Search in your own words, like "snack with peanuts".</p></div>
+</div>
+<h2 class="section reveal">One membership, everything included</h2>
+<div class="plan reveal">
+<div><b>14 days free</b><span>Try the whole app first.</span></div>
+<div><b>£5.99 a month</b><span>Cancel any time.</span></div>
+<div><b>£49.99 a year</b><span>About £4.17 a month.</span></div>
+</div>
+<p class="small-print reveal">On iPhone you can cancel in Settings, then your name, then Subscriptions. <a href="./support/">Help and support</a></p>
 <footer>
 <p><a href="./support/">Help and support</a> · <a href="./privacy/">Privacy Policy</a> · <a href="./terms/">Terms of Use</a></p>
 <p>Contact: <a href="mailto:freddidit55@gmail.com">freddidit55@gmail.com</a></p>
 <p>© 2026 FORME. All rights reserved.</p>
 </footer>
 </main>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})})();
+</script>
 </body>
 </html>
