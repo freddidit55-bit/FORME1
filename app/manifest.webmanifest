@@ -2,9 +2,9 @@
   "name": "FORME",
   "short_name": "FORME",
   "description": "Progress through practice. Train. Track. Progress.",
-  "id": "/forme1/app/",
-  "start_url": "/forme1/app/",
-  "scope": "/forme1/app/",
+  "id": "/FORME1/app/",
+  "start_url": "/FORME1/app/",
+  "scope": "/FORME1/app/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0a0a0a",
@@ -16,19 +16,19 @@
   ],
   "icons": [
     {
-      "src": "/forme1/app/icon-192.png",
+      "src": "/FORME1/app/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/forme1/app/icon-512.png",
+      "src": "/FORME1/app/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/forme1/app/icon-maskable-512.png",
+      "src": "/FORME1/app/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
