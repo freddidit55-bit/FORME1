@@ -1,1 +1,0 @@
-import{n as e}from"./index-0HUfOmpZ.js";import{t}from"./LegalPage-UBurHOaF.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`privacy`});export{r as component};
