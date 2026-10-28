@@ -1,0 +1,1 @@
+import{n as e}from"./index-Dvd2k5ak.js";import{t}from"./LegalPage-5zLXrK84.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`support`});export{r as component};
