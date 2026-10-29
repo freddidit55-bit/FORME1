@@ -1,0 +1,1 @@
+import{n as e}from"./index-TyvmiP_q.js";import{t}from"./LegalPage-BliQmk2w.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`support`});export{r as component};
