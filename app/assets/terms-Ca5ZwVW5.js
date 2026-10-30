@@ -1,1 +1,0 @@
-import{n as e}from"./index-CtltmeI6.js";import{t}from"./LegalPage-Dn6yJal2.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`terms`});export{r as component};
