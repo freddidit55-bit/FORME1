@@ -1,1 +1,0 @@
-import{n as e}from"./index-WybMCDjc.js";import{t}from"./LegalPage-Cn4tm-A7.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`privacy`});export{r as component};
