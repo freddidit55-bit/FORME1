@@ -1,1 +1,0 @@
-import{n as e}from"./index-DROdiukn.js";import{t}from"./LegalPage-sAByz_62.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`privacy`});export{r as component};
