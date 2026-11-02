@@ -1,1 +1,0 @@
-import{n as e}from"./index-dO_iYiwL.js";import{t}from"./LegalPage-CKUUl4Oc.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`licences`});export{r as component};
