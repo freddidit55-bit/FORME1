@@ -11,7 +11,7 @@ Label reading: Tesseract OCR (tesseract.js and tesseract.js-core, Apache License
   model (4.0.0_best_int, Apache License 2.0), served from FORME's own site and run on the phone.
 Everything else you see in FORME (exercise demos, hand diagrams, muscle maps, boss art, logo) is FORME's own work.
 
-Software packages (399):
+Software packages (400):
 
   @babel/code-frame 7.27.1 - MIT
   @babel/code-frame 7.29.7 - MIT
@@ -69,6 +69,7 @@ Software packages (399):
   @jridgewell/resolve-uri 3.1.2 - MIT
   @jridgewell/sourcemap-codec 1.6.0 - MIT
   @jridgewell/trace-mapping 0.3.31 - MIT
+  @mediapipe/pose 0.5.1675469404 - Apache-2.0
   @napi-rs/lzma-linux-x64-gnu 1.5.1 - MIT
   @napi-rs/wasm-runtime 1.2.4 - MIT
   @oozcitak/dom 2.0.2 - MIT

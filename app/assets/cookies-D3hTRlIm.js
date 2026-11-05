@@ -1,1 +1,0 @@
-import{n as e}from"./index-wSl-s2O9.js";import{t}from"./LegalPage-CY1-Ff10.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`cookies`});export{r as component};
