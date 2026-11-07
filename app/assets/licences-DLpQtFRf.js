@@ -1,0 +1,1 @@
+import{n as e}from"./index-BFGNvJmU.js";import{t}from"./LegalPage-S3kmAJdE.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`licences`});export{r as component};
