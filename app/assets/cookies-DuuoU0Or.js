@@ -1,1 +1,0 @@
-import{n as e}from"./index-DC5TGf47.js";import{t}from"./LegalPage-B45Laen5.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`cookies`});export{r as component};
