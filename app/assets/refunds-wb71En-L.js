@@ -1,1 +1,0 @@
-import{n as e}from"./index-DecPEaL2.js";import{t}from"./LegalPage-i9SSZR7P.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`refunds`});export{r as component};
