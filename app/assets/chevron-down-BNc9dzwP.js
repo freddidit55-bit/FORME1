@@ -1,0 +1,1 @@
+import{yt as e}from"./formeState-Bt_Wcwdd.js";var t=e(`chevron-down`,[[`path`,{d:`m6 9 6 6 6-6`,key:`qrunsl`}]]);export{t};
