@@ -1,1 +1,0 @@
-import{kt as e}from"./formeState-Byn3HpcL.js";var t=e(`chevron-down`,[[`path`,{d:`m6 9 6 6 6-6`,key:`qrunsl`}]]);export{t};
