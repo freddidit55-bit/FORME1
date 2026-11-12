@@ -1,0 +1,1 @@
+import{n as e}from"./index-CbJq36U7.js";import{t}from"./LegalPage-CMviaHrt.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`refunds`});export{r as component};
