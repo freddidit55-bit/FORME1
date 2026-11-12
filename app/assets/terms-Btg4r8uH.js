@@ -1,1 +1,0 @@
-import{n as e}from"./index-BYz1rHX3.js";import{t}from"./LegalPage-EZunoR3Y.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`terms`});export{r as component};
