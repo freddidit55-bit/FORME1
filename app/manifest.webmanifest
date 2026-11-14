@@ -33,5 +33,46 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start today's workout",
+      "short_name": "Workout",
+      "description": "Open today's workout, or the one you're in the middle of",
+      "url": "/FORME1/app/?go=workout",
+      "icons": [
+        {
+          "src": "/FORME1/app/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Log food",
+      "short_name": "Food",
+      "description": "Open Food to log a meal",
+      "url": "/FORME1/app/?go=food",
+      "icons": [
+        {
+          "src": "/FORME1/app/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Progress",
+      "short_name": "Progress",
+      "description": "See your lifts, muscles and records",
+      "url": "/FORME1/app/?go=progress",
+      "icons": [
+        {
+          "src": "/FORME1/app/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }
