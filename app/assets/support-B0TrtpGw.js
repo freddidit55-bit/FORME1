@@ -1,1 +1,0 @@
-import{r as e}from"./index-BDiGP2P7.js";import{t}from"./LegalPage-BYYO-12r.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`support`});export{r as component};
