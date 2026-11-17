@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BdxMnOeJ.js";import{t}from"./LegalPage-CzFwuyGQ.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`privacy`});export{r as component};
