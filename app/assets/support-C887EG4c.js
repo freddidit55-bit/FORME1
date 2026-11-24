@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BdxMnOeJ.js";import{t}from"./LegalPage-CoGT3gN7.js";var n=e(),r=()=>(0,n.jsx)(t,{doc:`support`});export{r as component};
