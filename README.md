@@ -1,5 +1,5 @@
-# FORME
+# Formed
 
-Public pages for the FORME app: Privacy Policy, Terms of Use, and Help and support.
+Public pages for the Formed app (Privacy Policy, Terms of Use, Help and support) and the built web app in `app/`.
 
-The app itself is not in this repository. Copyright © 2026 FORME. All rights reserved (see LICENSE).
+Copyright © 2026 Freddie Thompson, trading as Formed. All rights reserved (see LICENSE). The source code is not in this repository.

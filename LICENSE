@@ -1,5 +1,7 @@
-Copyright (c) 2026 FORME. All rights reserved.
+Copyright (c) 2026 Freddie Thompson, trading as Formed. All rights reserved.
 
-This repository holds only FORME's public web pages (Privacy Policy, Terms of Use, Help and support).
-No permission is granted to copy, modify, publish or distribute any part of it, or to use the FORME
-name, text or design, without written permission from the owner.
+This repository holds Formed's public web pages (Privacy Policy, Terms of Use, Help and support) and the
+built web app in /app. No permission is granted to copy, modify, host, publish or distribute any part of it,
+or to use the Formed name, logo, text, exercise content or design, without written permission from the owner.
+
+Third-party components keep their own licences, listed in third-party-licences.txt.
